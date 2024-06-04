@@ -7,8 +7,7 @@ interface Props {
 }
 
 const AddTaskForm: React.FC<Props> = ({addTask, setCurrentTask, currentTask}) => {
-    const
-        clickSend = (e: React.FormEvent<HTMLFormElement>) => {
+    const clickSend = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         addTask();
         setCurrentTask('');
